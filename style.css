@@ -44,7 +44,6 @@ main .bg-1{
     object-fit: cover;
     z-index: -5;
     overflow-x: hidden;
-    
 }
 
 main .container{
@@ -58,6 +57,7 @@ main .container{
 
 .intro-image{
     height: 80vh;
+    padding-bottom: 2rem;
 }
 
 .intro-title{
@@ -82,6 +82,8 @@ main .container{
 
 .guy{
     z-index: 4;
+    height: 100vh;
+    margin-top: 4.5rem;
 }
 
 .nothing{
@@ -93,5 +95,151 @@ main .container{
 .hero .container{
     display: flex;
     justify-content: space-between;
-    margin: 100% 2rem 0 2rem;
+    margin: 0 2rem;
+}
+
+.hero .container .textbox{
+    margin-left: -12vw;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+}
+
+.hero .container .textbox h1{
+    color: #513686;
+    font-size: 70px;
+    margin-bottom: 2rem;
+    font-family: Changa;
+    line-height: 95%;
+}
+
+.hero .container .textbox p{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 4rem;
+}
+
+.hero .container .textbox .button{
+    font-family: Changa;
+    font-size: 30px;
+    color: white;
+    background-color: #DD4E80;
+    padding: .5rem 3rem;
+    width: 26.5%;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/***********************************************************************/
+
+.squad{
+    z-index: ;
+    margin-top: 12vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.squad .bg{
+    max-width: 100vw;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.squad .container, .squad img:last-child{
+    z-index: 8;
+    margin: 0 4rem;
+}
+
+.squad .container h1{
+    font-family: Changa;
+    color: #dd4e80;
+    font-size: 80px;
+    line-height: 95%;
+}
+
+.squad .container p{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 130%;
+    margin-bottom: 2rem;
+}
+
+.squad .button{
+    font-family: Changa;
+    font-size: 30px;
+    color: #005596;
+    background-color: #51B9A3;
+    padding: .5rem 3rem;
+    width: 26.5%;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.squad img:last-child{
+    height: 70vh;
+}
+
+/********************************************************************/
+
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.quem h2{
+    font-family: Changa;
+    font-size: 30px;
+}
+
+.quem p{
+    font-weight: 300;
+}
+
+.links h2{font-family: Changa;}
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul li a, .contact a, .contact p{
+    color: white;
+    font-family: Changa;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.contact h2{
+    font-family: Changa;
+    font-size: 24px;
+}
+
+.contact .icon{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact .icon img{
+    height: 3.5rem;
+}
+
+.contact .icon img:hover{
+    filter: brightness(75%);
 }
